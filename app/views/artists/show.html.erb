@@ -1,0 +1,9 @@
+<% provide(:title, @artist.name) %>
+<h1>
+    <%= @artist.name %>
+</h1>
+<body>
+	 <% @artist.tracks.each do |track|%>
+    <%= track.name %>
+    <% end %>
+</body>
